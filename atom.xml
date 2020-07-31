@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jayhushion.github.io</id>
     <title>Hikari的博客</title>
-    <updated>2020-07-30T01:41:50.755Z</updated>
+    <updated>2020-07-31T08:46:48.417Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jayhushion.github.io"/>
     <link rel="self" href="https://jayhushion.github.io/atom.xml"/>
@@ -24,6 +24,18 @@
 <p>从宏观来说，产品经理像是RGB三原色图中交叉的白色，那红色代表UX（User Experience），绿色代表Tech（Technology），蓝色代表B（Businese）。白色就是三者的汇总。</p>
 <p>我个人很喜欢OnePlus的宣传语，Never Settle，我们作为新时代的人，独立个性是非常强的，生活方式不尽相同，而产品经理必须要是一个不将就的人，如果产品经理对世间事物都会默默接受，没有任何其他所求，最会找茬的人不会找茬，整个社会就会停滞不前，过着一个小确幸的日子。</p>
 <p>判断一个设计的好坏必须从使用场景来进行分析。</p>
+<p>2020/7/31<br>
+获客--》激活--》留存--》变现</p>
+<p>云计算有三种服务模式，IaaS, PaaS和SaaS。单从英文全称去理解，他们分别是“基础设施即服务”“平台即服务”和“软件即服务”。<br>
+On-premises，Iaas，Paas，Saas</p>
+<p>第一个对应着本地化部署（On-premises）。自己种菜，自己准备燃料，做饭过程中一切操作基本不依赖外界，自给自足。对应到云计算中就是公司什么都自己准备好。<br>
+第二个是基础设施服务（Iaas）。厨房是存储与服务器，燃料则是网络。你的公司运营中不需要操心服务器、存储、网络这些，因为他们就跟现代城市生活中的水电一样，是云计算时代的基础设施。<br>
+第三个是平台（Paas）。这其中炊具是操作系统，餐具则是中间件。你的公司购买了平台服务，所以除了基础设施，服务商还会通过中间件提供给你各种开发使用的解决方案，节省时间和资源。<br>
+第四个当然是软件（Saas）。普通消费者接触的基本就是这一层，最常见的就是各式web微应用。你甚至不需要自己准备数据（食材），只需想好自己需要什么，然后想用就可以了。<br>
+一般说来，各云计算服务商提供的服务不是百分之百归属于上述某一类服务中，但是按照核心业务偏向来看，还是可以做大致区分，各举一个较为知名的云计算服务商为例。</p>
+<p>Iaas：阿里云服务器ecs<br>
+Paas：Salesforce<br>
+Saas：有赞</p>
 ]]></content>
     </entry>
     <entry>
