@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jayhushion.github.io</id>
     <title>Hikari的博客</title>
-    <updated>2020-10-03T16:28:27.342Z</updated>
+    <updated>2020-10-03T16:33:20.764Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jayhushion.github.io"/>
     <link rel="self" href="https://jayhushion.github.io/atom.xml"/>
@@ -11,11 +11,11 @@
     <icon>https://jayhushion.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Hikari的博客</rights>
     <entry>
-        <title type="html"><![CDATA[原神体验报告（体验自9/15-9/27 PC公开测试版本期间，随缘更新）]]></title>
-        <id>https://jayhushion.github.io/post/i9posaTNo/</id>
-        <link href="https://jayhushion.github.io/post/i9posaTNo/">
+        <title type="html"><![CDATA[原神体验报告]]></title>
+        <id>https://jayhushion.github.io/post/3mjZEXEYp/</id>
+        <link href="https://jayhushion.github.io/post/3mjZEXEYp/">
         </link>
-        <updated>2020-09-25T16:11:36.000Z</updated>
+        <updated>2020-10-03T16:31:10.000Z</updated>
         <content type="html"><![CDATA[<h1 id="序言">序言</h1>
 <p>mihayo作为国内崛起速度强势的二次元向厂商，可以看到对于二次元向蓝海的开拓市场的能力，从崩坏学园2到崩坏3，完成了产品迭代的质变，从横版到3D ACT手游，mihayo拥有非常良好的创新能力。我们都知道开放世界或者质量较高的PC端游戏，一旦开发方向有了错误，玩家不买单，需求没有对应好，拥有非常大的概率会亏损，导致项目失败。mihayo是举公司之力来进行开发工作，并没有开设多个工作室来分担风险，一旦项目失败，对于公司的盈利有着很大的损失。所以mihayo并没有担这个风险，而是吸取崩坏三的开放世界模式，进行大地图的探索，再这个基础上借鉴塞尔达的遗迹设定，以及崩坏三一贯的元素设定，进行原神的世界观重铸。<br>
 开放世界的核心就是经过自己的探索获得阶段性奖励让玩家获得成就感，这个阶段性奖励可以作为新的阶段的开荒资本，去进行新一轮的挑战，原神以为把握住这个机制，设计了世界等级的概念，利用阶段性胜利，制造新的挑战，在冒险等级25、30、35、40、50设置世界等级晋升机制，利用阶段毕业来提升世界等级去制造新的挑战，而当前内容较少，提升冒险等级仅为提升BOSS等级和掉落物品品阶提升。BOSS的机制却没有任何改变，只是进行数值的堆叠。未免太过于敷衍。况且到达晋升阶段时给予回报低，远不如抽卡，而晋升后玩家很有可能卡住进度，打不过经过数值强化后的BOSS，无法进行进一步探索，制造氪金陷阱，让玩家通过抽卡强化角色及五星武器的精炼属性。说到这，我也想总结一下原神的装备系统。（写到这时，我9天到达冒险等级33级，可能有些描述较为残缺，仅代表个人所知，没有查看官方文档）</p>
@@ -42,11 +42,11 @@
 </ol>
 <h3 id="分类">分类</h3>
 <p>角色部分按元素属性分为（岩、水、火、风、雷、冰、（在怪物中有草属性，可能后续可能会出草元素的人物）），按功能可以定位为（控场、回复（护盾）、输出），按品质暂分为五星和四星，五星相较于四星，在专项能力中要比四星强（相同定位）。<br>
-<em>角色养成属性共有天赋和圣之座两项：</em></p>
+<em>角色养成属性共有天赋和命之座两项：</em></p>
 <h3 id="天赋">天赋</h3>
 <p>每个角色都拥有五至七个天赋能力：<br>
 天赋能力包括对普通攻击、元素战技、元素爆发、开放世界探索、元素战技附加效果这五个能力进行升级，其他天赋根据角色性质不同而变化。</p>
-<h3 id="圣之座">圣之座</h3>
+<h3 id="命之座">命之座</h3>
 <p>每个角色都拥有六层命之座，这意味着角色必须获取七次才能完全解锁角色能力。<br>
 命之座的第三、五层均为提升元素战技和元素爆发天赋三级。<br>
 其他命之座均为提升普通攻击、元素战技、元素爆发的攻击数值、BUFF、CD、持续时间及范围等。均提升明显。</p>
