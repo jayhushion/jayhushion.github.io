@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jayhushion.github.io</id>
     <title>Hikari的博客</title>
-    <updated>2020-09-25T16:17:03.787Z</updated>
+    <updated>2020-10-03T14:51:08.146Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jayhushion.github.io"/>
     <link rel="self" href="https://jayhushion.github.io/atom.xml"/>
@@ -113,6 +113,14 @@ OW：核心为类MOBA的FPS游戏，看似核心在射击上，实则在战术�
 <p>镰刀的R技能为向前方120度扇形区域进行横扫。并具有百分之15的吸血效果。<br>
 剑的R技能为向前方突刺并进行挑飞 击飞1秒<br>
 枪的R技能为前方线性射出子弹，持续2秒可手动结束。</p>
+<h1 id="mmorpg-pvp玩法策划">MMORPG PVP玩法策划</h1>
+<p><img src="https://jayhushion.github.io/post-images/1599802847632.png" alt="" loading="lazy"><br>
+该PVP模式为擂台赛，每队九人，九人中的一人分配为队长，队长将九人再分为三组，每组三人。<br>
+擂台赛的场上为PVP 3V3对决，场下的人也并不是空闲观战状态，需要进行BOSS争夺战，双方将比拼BOSS击杀的快慢。先击杀掉BOSS的队伍，在场上的PVP中，己方队伍的攻击力*1.25。<br>
+PVP的胜利条件是一方的三个小队共九人全部被击杀。</p>
+<h1 id="mmorpg-关卡内机制灵感案">MMORPG 关卡内机制灵感案</h1>
+<p>关卡中有八个属性柱，属性柱有三种颜色，为红、绿、蓝。属性柱收到一次普通攻击时将会变换颜色，颜色变换规律为红、绿、蓝。将八个属性柱调整为同一个颜色将会为玩家提供BUFF，红色为攻击力增加百分之40，绿色为提供最大生命值百分之20的护盾，蓝色为技能CD减少百分之30，并且恢复MP.BUFF效果持续一分钟，1分钟结束后，八个柱子的颜色将会随机更改，需要玩家再次进行调整。如果在BUFF结束后15秒内未能将灯柱调整为统一颜色，随机一名队伍中的玩家将直接死亡。<br>
+这样的玩法可以让玩家必须保持一定的默契，在BOSS即将进入昏迷状态时将BUFF调整为增加攻击力，在BOSS进入激怒状态下的时候调整为护盾BUFF，在一般情况下可以选择减CD的BUFF提供额外输出补足。</p>
 ]]></content>
     </entry>
     <entry>
