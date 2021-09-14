@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jayhushion.github.io</id>
     <title>Hikari的博客</title>
-    <updated>2021-09-14T07:40:36.587Z</updated>
+    <updated>2021-09-14T07:42:42.639Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jayhushion.github.io"/>
     <link rel="self" href="https://jayhushion.github.io/atom.xml"/>
@@ -36,6 +36,11 @@
 <td>利用海量行为树分支维护NPC行为。行为树（注意：从右至左阅读）拥有丰富的分层结构，这种结构能够为每种行为提供多条路径。这样做的好处是既可以从一定范围内产生出一种特定行动，又保证了整个系统尽可能的灵活。行为树的顶层【右橘色】分解了NPC的三种关键反应方式，分别为“系统直接命令、“维持主动战斗”和“在必要时启动战斗“。继续向下执行则到了条件层【蓝色/紫色】，该层将根据当前的世界条件及角色本身的一些情况决定可以执行的行为。最后移动至下层【左侧】，该层将处理游戏中可能发生的几乎所有的战斗变化。这其中的关键是构建中间层，以便它可以链接到下层的各种不同行为。这样做也是为了避免基于一些非常特定的条件通过行为树的下半部分去复制行为。因此，游戏中所有不同的NPC（下文中会提到），以及Seeker Mine-技术上讲，它是一个人工智能角色-会拥有类似的子树或者行为来满足需要进行复制的情况。<img src="https://di.gameres.com/attachment/forum/201905/30/091255wewhwpikhmvim4zk.jpg" alt="" loading="lazy"></td>
 </tr>
 <tr>
+<td>极度恐慌</td>
+<td>GOAP</td>
+<td>只有三个状态，前进到某地，播动画，与物品交互。AI需要赋予目标才会行动，GOAP会解码并生成一套解决方案来执行目标。解决方案就是三个状态互相切换来实现。F.E.A.R里共有70多个目标，系统可以动态调整目标的优先级，来确定哪个目标为优先要做的。比如如果敌人不知道主角位置，巡逻的优先级就会提高，杀死敌人的优先级就会降低。如果知道主角就在附近，他就会降低巡逻的优先级，并提高杀死敌人的优先级。动作系统中共有120个可用动作，包括简单动画和攻击动画。设计者利用配置表根据不同种类的敌人分配不同的动作。<img src="https://jayhushion.github.io/post-images/1631605295935.bmp" alt="" loading="lazy"></td>
+</tr>
+<tr>
 <td>看门狗</td>
 <td>数据表维护</td>
 <td>利用一张大数据表维护NPC的规则。规则包括NPC情绪类型，善恶类型，运动状态，反应规则等等。<img src="https://jayhushion.github.io/post-images/1631605205630.bmp" alt="" loading="lazy"></td>
@@ -43,7 +48,7 @@
 <tr>
 <td>地平线、消逝的光芒</td>
 <td>HTN分层任务网络</td>
-<td>将规划递归拆解成原子动作。TASK-&gt;METHOD-&gt;BRANCH-&gt;SOLUTION-&gt;BRANCH TASKS 用迭代来拆分目标，寻求方法及分支，然后寻求解决途径。<img src="https://jayhushion.github.io/post-images/1631605221957.bmp" alt="" loading="lazy"></td>
+<td>将规划递归拆解成原子动作。TASK-&gt;METHOD-&gt;BRANCH-&gt;SOLUTION-&gt;BRANCH TASKS 用迭代来拆分目标，寻求方法及分支，然后寻求解决途径。<img src="https://jayhushion.github.io/post-images/1631605352184.bmp" alt="" loading="lazy"></td>
 </tr>
 </tbody>
 </table>
