@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>AI行为实现技术简介 | Hikari的博客</title>
-<link rel="shortcut icon" href="https://jayhushion.github.io/favicon.ico?v=1631605457481">
+<link rel="shortcut icon" href="https://jayhushion.github.io/favicon.ico?v=1631605623935">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://jayhushion.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="AI行为实现技术简介 | Hikari的博客 - Atom Feed" href="https://jayhushion.github.io/atom.xml">
@@ -11,19 +11,9 @@
 
 
 
-    <meta name="description" content="
-
-
-游戏
-AI实现类型
-简介
-
-
-
-
-美国末日
-有限状态机
-因为美国末日仅有战斗AI，所以使用了结构比较简单的有限状态机进行AI配置。状态包括恐惧、推进、进展、枪械战斗、躲藏、调查、搜索、侧袭、脚本定义。各个状态通过某些触发条件进行状态跳..." />
+    <meta name="description" content="|  游戏   | AI实现类型  | 简介  |
+|  ----  | ----  | ----  |
+| 美国末日 | 有限状态机 | 因为美国末日仅有战斗AI，所以使用了结构比较简单的有限状态机进行AI配置。状态包括恐惧、推进、进展、..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -33,7 +23,7 @@ AI实现类型
       <div class="main-content">
         <div class="site-header">
   <a href="https://jayhushion.github.io">
-  <img class="avatar" src="https://jayhushion.github.io/images/avatar.png?v=1631605457481" alt="">
+  <img class="avatar" src="https://jayhushion.github.io/images/avatar.png?v=1631605623935" alt="">
   </a>
   <h1 class="site-title">
     Hikari的博客
@@ -108,42 +98,13 @@ AI实现类型
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <table>
-<thead>
-<tr>
-<th>游戏</th>
-<th>AI实现类型</th>
-<th>简介</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>美国末日</td>
-<td>有限状态机</td>
-<td>因为美国末日仅有战斗AI，所以使用了结构比较简单的有限状态机进行AI配置。状态包括恐惧、推进、进展、枪械战斗、躲藏、调查、搜索、侧袭、脚本定义。各个状态通过某些触发条件进行状态跳转，跳转到其他状态。另外游戏还给NPC设计了角色系统，角色分别为侧袭者、推进者、调查者、原地瞄准者、借机设计者。在战斗开始时，上层AI系统会给不同的NPC赋予不同的角色。不同的角色赋予的初始状态是不同的，在战斗时与不同的角色进行战斗可以调整战斗节奏。这样的设置避免了NPC触发战斗时全都追击玩家，导致战斗体验差，与现实感官差距大。</td>
-</tr>
-<tr>
-<td>全境封锁2</td>
-<td>行为树</td>
-<td>利用海量行为树分支维护NPC行为。行为树（注意：从右至左阅读）拥有丰富的分层结构，这种结构能够为每种行为提供多条路径。这样做的好处是既可以从一定范围内产生出一种特定行动，又保证了整个系统尽可能的灵活。行为树的顶层【右橘色】分解了NPC的三种关键反应方式，分别为“系统直接命令、“维持主动战斗”和“在必要时启动战斗“。继续向下执行则到了条件层【蓝色/紫色】，该层将根据当前的世界条件及角色本身的一些情况决定可以执行的行为。最后移动至下层【左侧】，该层将处理游戏中可能发生的几乎所有的战斗变化。这其中的关键是构建中间层，以便它可以链接到下层的各种不同行为。这样做也是为了避免基于一些非常特定的条件通过行为树的下半部分去复制行为。因此，游戏中所有不同的NPC（下文中会提到），以及Seeker Mine-技术上讲，它是一个人工智能角色-会拥有类似的子树或者行为来满足需要进行复制的情况。<img src="https://di.gameres.com/attachment/forum/201905/30/091255wewhwpikhmvim4zk.jpg" alt="" loading="lazy"></td>
-</tr>
-<tr>
-<td>极度恐慌</td>
-<td>GOAP</td>
-<td>只有三个状态，前进到某地，播动画，与物品交互。AI需要赋予目标才会行动，GOAP会解码并生成一套解决方案来执行目标。解决方案就是三个状态互相切换来实现。F.E.A.R里共有70多个目标，系统可以动态调整目标的优先级，来确定哪个目标为优先要做的。比如如果敌人不知道主角位置，巡逻的优先级就会提高，杀死敌人的优先级就会降低。如果知道主角就在附近，他就会降低巡逻的优先级，并提高杀死敌人的优先级。动作系统中共有120个可用动作，包括简单动画和攻击动画。设计者利用配置表根据不同种类的敌人分配不同的动作。<img src="https://jayhushion.github.io/post-images/1631605295935.bmp" alt="" loading="lazy"></td>
-</tr>
-<tr>
-<td>看门狗</td>
-<td>数据表维护</td>
-<td>利用一张大数据表维护NPC的规则。规则包括NPC情绪类型，善恶类型，运动状态，反应规则等等。<img src="https://jayhushion.github.io/post-images/1631605205630.bmp" alt="" loading="lazy"></td>
-</tr>
-<tr>
-<td>地平线、消逝的光芒</td>
-<td>HTN分层任务网络</td>
-<td>将规划递归拆解成原子动作。TASK-&gt;METHOD-&gt;BRANCH-&gt;SOLUTION-&gt;BRANCH TASKS 用迭代来拆分目标，寻求方法及分支，然后寻求解决途径。<img src="https://jayhushion.github.io/post-images/1631605352184.bmp" alt="" loading="lazy"></td>
-</tr>
-</tbody>
-</table>
+                <p><img src="https://jayhushion.github.io/post-images/1631605619978.bmp" alt="" loading="lazy">|  游戏   | AI实现类型  | 简介  |<br>
+|  ----  | ----  | ----  |<br>
+| 美国末日 | 有限状态机 | 因为美国末日仅有战斗AI，所以使用了结构比较简单的有限状态机进行AI配置。状态包括恐惧、推进、进展、枪械战斗、躲藏、调查、搜索、侧袭、脚本定义。各个状态通过某些触发条件进行状态跳转，跳转到其他状态。另外游戏还给NPC设计了角色系统，角色分别为侧袭者、推进者、调查者、原地瞄准者、借机设计者。在战斗开始时，上层AI系统会给不同的NPC赋予不同的角色。不同的角色赋予的初始状态是不同的，在战斗时与不同的角色进行战斗可以调整战斗节奏。这样的设置避免了NPC触发战斗时全都追击玩家，导致战斗体验差，与现实感官差距大。  |<br>
+| 全境封锁2  | 行为树 | 利用海量行为树分支维护NPC行为。行为树（注意：从右至左阅读）拥有丰富的分层结构，这种结构能够为每种行为提供多条路径。这样做的好处是既可以从一定范围内产生出一种特定行动，又保证了整个系统尽可能的灵活。行为树的顶层【右橘色】分解了NPC的三种关键反应方式，分别为“系统直接命令、“维持主动战斗”和“在必要时启动战斗“。继续向下执行则到了条件层【蓝色/紫色】，该层将根据当前的世界条件及角色本身的一些情况决定可以执行的行为。最后移动至下层【左侧】，该层将处理游戏中可能发生的几乎所有的战斗变化。这其中的关键是构建中间层，以便它可以链接到下层的各种不同行为。这样做也是为了避免基于一些非常特定的条件通过行为树的下半部分去复制行为。因此，游戏中所有不同的NPC（下文中会提到），以及Seeker Mine-技术上讲，它是一个人工智能角色-会拥有类似的子树或者行为来满足需要进行复制的情况。<img src="https://di.gameres.com/attachment/forum/201905/30/091255wewhwpikhmvim4zk.jpg" alt="" loading="lazy">  |<br>
+|  极度恐慌  | GOAP  | 只有三个状态，前进到某地，播动画，与物品交互。AI需要赋予目标才会行动，GOAP会解码并生成一套解决方案来执行目标。解决方案就是三个状态互相切换来实现。F.E.A.R里共有70多个目标，系统可以动态调整目标的优先级，来确定哪个目标为优先要做的。比如如果敌人不知道主角位置，巡逻的优先级就会提高，杀死敌人的优先级就会降低。如果知道主角就在附近，他就会降低巡逻的优先级，并提高杀死敌人的优先级。动作系统中共有120个可用动作，包括简单动画和攻击动画。设计者利用配置表根据不同种类的敌人分配不同的动作。<img src="https://jayhushion.github.io/post-images/1631605295935.bmp" alt="" loading="lazy">  |<br>
+| 看门狗  | 数据表维护 | 利用一张大数据表维护NPC的规则。规则包括NPC情绪类型，善恶类型，运动状态，反应规则等等。<img src="https://jayhushion.github.io/post-images/1631605205630.bmp" alt="" loading="lazy">  |<br>
+| 地平线、消逝的光芒  | HTN分层任务网络  | 将规划递归拆解成原子动作。TASK-&gt;METHOD-&gt;BRANCH-&gt;SOLUTION-&gt;BRANCH TASKS 用迭代来拆分目标，寻求方法及分支，然后寻求解决途径。<img src="https://jayhushion.github.io/post-images/1631605352184.bmp" alt="" loading="lazy"> |</p>
 
               </div>
               <div class="toc-container">
