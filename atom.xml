@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jayhushion.github.io</id>
     <title>Hikari的博客</title>
-    <updated>2021-09-14T07:53:19.216Z</updated>
+    <updated>2021-09-16T08:29:03.228Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jayhushion.github.io"/>
     <link rel="self" href="https://jayhushion.github.io/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>https://jayhushion.github.io/images/avatar.png</logo>
     <icon>https://jayhushion.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Hikari的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[背包系统]]></title>
+        <id>https://jayhushion.github.io/post/UrJpiASMw/</id>
+        <link href="https://jayhushion.github.io/post/UrJpiASMw/">
+        </link>
+        <updated>2021-09-16T08:24:47.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="版本更新记录">版本更新记录</h1>
+<h1 id="前言">前言</h1>
+<h2 id="设计目的">设计目的</h2>
+<h2 id="设计思路">设计思路</h2>
+<p>#正文</p>
+<h2 id="背包基础界面">背包基础界面</h2>
+<h2 id="背包界面操作">背包界面操作</h2>
+<h2 id="打开与关闭背包">打开与关闭背包</h2>
+<h2 id="背包分页栏">背包分页栏</h2>
+<h2 id="背包栏">背包栏</h2>
+<h2 id="货币区">货币区</h2>
+<h2 id="操作提示区">操作提示区</h2>
+<h1 id="资源">资源</h1>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AI行为实现技术简介]]></title>
         <id>https://jayhushion.github.io/post/XOVMooVie/</id>

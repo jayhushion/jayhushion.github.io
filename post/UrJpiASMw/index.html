@@ -2,19 +2,29 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>随笔 | Hikari的博客</title>
+<title>背包系统 | Hikari的博客</title>
 <link rel="shortcut icon" href="https://jayhushion.github.io/favicon.ico?v=1631780936871">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://jayhushion.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="随笔 | Hikari的博客 - Atom Feed" href="https://jayhushion.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="背包系统 | Hikari的博客 - Atom Feed" href="https://jayhushion.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="Rougelike游戏
-开局100级 随时间开始减少经验值，开局自选BUILD，减少级数的同时脱落BUILD属性，尽可能的在BUILD未完全脱落时之前通过，因为往后拖会越来越难。
-玩家追求速通和不同BUILD之间的化学作用。
-玩家一开始只有..." />
+    <meta name="description" content="版本更新记录
+前言
+设计目的
+设计思路
+#正文
+背包基础界面
+背包界面操作
+打开与关闭背包
+背包分页栏
+背包栏
+货币区
+操作提示区
+资源
+..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -85,11 +95,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              随笔
+              背包系统
             </h2>
             <div class="post-info">
               <span>
-                2021-05-26
+                2021-09-16
               </span>
               <span>
                 1 min read
@@ -99,18 +109,40 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>Rougelike游戏<br>
-开局100级 随时间开始减少经验值，开局自选BUILD，减少级数的同时脱落BUILD属性，尽可能的在BUILD未完全脱落时之前通过，因为往后拖会越来越难。<br>
-玩家追求速通和不同BUILD之间的化学作用。<br>
-玩家一开始只有一种属性BUILD，在通关过后积攒外部货币，以解锁其他派系BUILD。<br>
-BUILD天赋树类似于流放之路。<br>
-<img src="https://jayhushion.github.io/post-images/1622032937392.png" alt="" loading="lazy"><br>
-内部基石影响Build，外部小天赋影响属性数值。</p>
-<p>脑洞否认，难度无法平衡，后期趣味点缺失。</p>
+                <h1 id="版本更新记录">版本更新记录</h1>
+<h1 id="前言">前言</h1>
+<h2 id="设计目的">设计目的</h2>
+<h2 id="设计思路">设计思路</h2>
+<p>#正文</p>
+<h2 id="背包基础界面">背包基础界面</h2>
+<h2 id="背包界面操作">背包界面操作</h2>
+<h2 id="打开与关闭背包">打开与关闭背包</h2>
+<h2 id="背包分页栏">背包分页栏</h2>
+<h2 id="背包栏">背包栏</h2>
+<h2 id="货币区">货币区</h2>
+<h2 id="操作提示区">操作提示区</h2>
+<h1 id="资源">资源</h1>
 
               </div>
               <div class="toc-container">
-                
+                <ul class="markdownIt-TOC">
+<li><a href="#%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95">版本更新记录</a></li>
+<li><a href="#%E5%89%8D%E8%A8%80">前言</a>
+<ul>
+<li><a href="#%E8%AE%BE%E8%AE%A1%E7%9B%AE%E7%9A%84">设计目的</a></li>
+<li><a href="#%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF">设计思路</a></li>
+<li><a href="#%E8%83%8C%E5%8C%85%E5%9F%BA%E7%A1%80%E7%95%8C%E9%9D%A2">背包基础界面</a></li>
+<li><a href="#%E8%83%8C%E5%8C%85%E7%95%8C%E9%9D%A2%E6%93%8D%E4%BD%9C">背包界面操作</a></li>
+<li><a href="#%E6%89%93%E5%BC%80%E4%B8%8E%E5%85%B3%E9%97%AD%E8%83%8C%E5%8C%85">打开与关闭背包</a></li>
+<li><a href="#%E8%83%8C%E5%8C%85%E5%88%86%E9%A1%B5%E6%A0%8F">背包分页栏</a></li>
+<li><a href="#%E8%83%8C%E5%8C%85%E6%A0%8F">背包栏</a></li>
+<li><a href="#%E8%B4%A7%E5%B8%81%E5%8C%BA">货币区</a></li>
+<li><a href="#%E6%93%8D%E4%BD%9C%E6%8F%90%E7%A4%BA%E5%8C%BA">操作提示区</a></li>
+</ul>
+</li>
+<li><a href="#%E8%B5%84%E6%BA%90">资源</a></li>
+</ul>
+
               </div>
             </div>
           </article>
@@ -119,9 +151,9 @@ BUILD天赋树类似于流放之路。<br>
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://jayhushion.github.io/post/3mjZEXEYp/">
+            <a href="https://jayhushion.github.io/post/XOVMooVie/">
               <h3 class="post-title">
-                原神体验报告
+                AI行为实现技术简介
               </h3>
             </a>
           </div>
