@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jayhushion.github.io</id>
     <title>Hikari的博客</title>
-    <updated>2021-09-16T08:38:52.350Z</updated>
+    <updated>2021-09-16T08:39:48.111Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jayhushion.github.io"/>
     <link rel="self" href="https://jayhushion.github.io/atom.xml"/>
@@ -59,7 +59,7 @@
 <tr>
 <td>极度恐慌</td>
 <td>GOAP</td>
-<td>只有三个状态，前进到某地，播动画，与物品交互。AI需要赋予目标才会行动，GOAP会解码并生成一套解决方案来执行目标。解决方案就是三个状态互相切换来实现。F.E.A.R里共有70多个目标，系统可以动态调整目标的优先级，来确定哪个目标为优先要做的。比如如果敌人不知道主角位置，巡逻的优先级就会提高，杀死敌人的优先级就会降低。如果知道主角就在附近，他就会降低巡逻的优先级，并提高杀死敌人的优先级。动作系统中共有120个可用动作，包括简单动画和攻击动画。设计者利用配置表根据不同种类的敌人分配不同的动作。<img src="https://jayhushion.github.io/post-images/1631605977631.bmp" alt="" loading="lazy"></td>
+<td>只有三个状态，前进到某地，播动画，与物品交互。AI需要赋予目标才会行动，GOAP会解码并生成一套解决方案来执行目标。解决方案就是三个状态互相切换来实现。F.E.A.R里共有70多个目标，系统可以动态调整目标的优先级，来确定哪个目标为优先要做的。比如如果敌人不知道主角位置，巡逻的优先级就会提高，杀死敌人的优先级就会降低。如果知道主角就在附近，他就会降低巡逻的优先级，并提高杀死敌人的优先级。动作系统中共有120个可用动作，包括简单动画和攻击动画。设计者利用配置表根据不同种类的敌人分配不同的动作。<img src="https://jayhushion.github.io/post-images/1631781579856.bmp" alt="" loading="lazy"></td>
 </tr>
 <tr>
 <td>看门狗</td>
